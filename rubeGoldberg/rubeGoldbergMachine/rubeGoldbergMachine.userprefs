@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/cameraPosition.cs">
+    <Files>
+      <File FileName="Assets/Scripts/collisionForceX.cs" Line="10" Column="74" />
+      <File FileName="Assets/Scripts/collisionForceZ.cs" Line="10" Column="6" />
+      <File FileName="Assets/Scripts/cameraPosition.cs" Line="23" Column="62" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
