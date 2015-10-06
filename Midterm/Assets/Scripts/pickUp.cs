@@ -24,8 +24,8 @@ public class pickUp : MonoBehaviour {
 		//need to fix position relative to player
 		if (Input.GetKeyDown (KeyCode.Space) && !pickedUp && inRange) {
 			transform.parent = player.transform;
-			player.GetComponent<Rigidbody>().velocity = Vector3.zero;
-			player.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+			//player.GetComponent<Rigidbody>().velocity = Vector3.zero;
+			//player.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 			transform.position = new Vector3 ((player.position.x + 20f), player.position.y, player.position.z);
 			//transform.eulerAngles = new Vector3 (player.transform.eulerAngles.x, player.transform.eulerAngles.y, player.transform.eulerAngles.z);
 			transform.GetComponent<Rigidbody>().isKinematic = true;
