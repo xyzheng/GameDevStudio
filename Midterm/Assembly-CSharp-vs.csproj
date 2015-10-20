@@ -46,13 +46,19 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\camera.cs" />
+     <Compile Include="Assets\Scripts\car.cs" />
      <Compile Include="Assets\Scripts\follow.cs" />
+     <Compile Include="Assets\Scripts\minimap.cs" />
      <Compile Include="Assets\Scripts\move.cs" />
      <Compile Include="Assets\Scripts\pickUp.cs" />
      <Compile Include="Assets\Scripts\pickUpUsingCollider.cs" />
      <Compile Include="Assets\Scripts\setKinematic.cs" />
-     <Compile Include="Assets\Scripts\turnOffRenderer.cs" />
+     <Compile Include="Assets\Scripts\startScreen.cs" />
+     <Compile Include="Assets\Scripts\turnOffBlue.cs" />
+     <Compile Include="Assets\Scripts\turnOffGreen.cs" />
+     <Compile Include="Assets\Scripts\turnOffOrange.cs" />
+     <Compile Include="Assets\Scripts\turnOffRed.cs" />
+     <Compile Include="Assets\Scripts\turnOffYellow.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>

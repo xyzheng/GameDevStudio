@@ -7,7 +7,6 @@ public class move : MonoBehaviour {
 	Vector3 inputVector; //remembers direction of input
 	public float turnSpeed = 50f;
 	public float moveSpeed = 50f;
-	bool carryingSomeone = false;
 
 	// Use this for initialization
 	void Start () {
@@ -22,10 +21,12 @@ public class move : MonoBehaviour {
 		if (Input.GetKey (KeyCode.A)) {
 		//	transform.Rotate (0f, -turnSpeed * Time.deltaTime, 0f);
 			transform.eulerAngles += new Vector3(0f, -turnSpeed * Time.deltaTime, 0f);
+			Camera.main.transform.eulerAngles += new Vector3(0f, -15 * Time.deltaTime, 0f);
 		}
 		if (Input.GetKey (KeyCode.D)) {
 		//	transform.Rotate (0f, turnSpeed * Time.deltaTime, 0f);
 			transform.eulerAngles += new Vector3(0f, turnSpeed * Time.deltaTime, 0f);
+			Camera.main.transform.eulerAngles += new Vector3(0f, 15 * Time.deltaTime, 0f);
 		}
 	}
 
