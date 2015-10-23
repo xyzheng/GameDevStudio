@@ -1,6 +1,6 @@
 //Maya ASCII 2016 scene
 //Name: House1.ma
-//Last modified: Tue, Oct 20, 2015 12:49:11 AM
+//Last modified: Tue, Oct 20, 2015 01:36:46 PM
 //Codeset: UTF-8
 requires maya "2016";
 currentUnit -l centimeter -a degree -t film;
@@ -101,7 +101,7 @@ createNode mesh -n "pCubeShape2" -p "pCube2";
 	setAttr -s 8 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.21499001979827881 0 ;
+	setAttr ".pv" -type "double2" 0.25 0.125 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";

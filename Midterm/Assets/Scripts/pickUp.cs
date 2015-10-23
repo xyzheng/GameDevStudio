@@ -21,6 +21,13 @@ public class pickUp : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (gameObject.activeSelf == false) {
+			Debug.Log ("lol");
+			pickedUp = false;
+			carrying = false;
+		}
+
 		//pick up
 		bool inRange = withinRange (new Vector3(transform.position.x, transform.position.y, transform.position.z),
 		                            new Vector3(player.position.x, player.position.y, player.position.z));
