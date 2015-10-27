@@ -16,7 +16,7 @@ public class Pathmaker : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		randomValue = Random.Range (50, 100);
+		randomValue = Random.Range (20, 40);
 		randomPosition = new Vector3(Random.Range (-transform.position.x, transform.position.x),
 		                             Random.Range (0, 3),
 		                             Random.Range (-transform.position.z, transform.position.z));
@@ -37,7 +37,6 @@ public class Pathmaker : MonoBehaviour {
 			else if (rand > 0.97f && rand < 1.0f) {
 				Instantiate (pathmakerPrefab, randomPosition, Quaternion.Euler (0, 0, 0));
 			}
-			//clone =
 			clone = Instantiate (floorPrefab, transform.position, Quaternion.Euler (0, 0, 0)) as GameObject;
 			transform.Translate (0, 0, 5);
 			counter++;
