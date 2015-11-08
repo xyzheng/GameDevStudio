@@ -9,7 +9,7 @@ public class Cat : MonoBehaviour {
 
 	void FixedUpdate () {
 		Vector3 directionToMouse = mouse.position - transform.position;
-		if (Vector3.Angle (transform.forward, directionToMouse) < 90f) {
+		if (Vector3.Angle (transform.forward, directionToMouse) < 120f) {
 			Ray catRay = new Ray (transform.position, directionToMouse);
 			RaycastHit catRayHitInfo = new RaycastHit ();
 
@@ -23,7 +23,7 @@ public class Cat : MonoBehaviour {
 					else {
 						if (catRayHitInfo.distance < 10f) {
 							catAlert.Play ();
-							GetComponent<Rigidbody>().AddForce(directionToMouse.normalized * 1000f);
+							GetComponent<Rigidbody>().AddForce(directionToMouse.normalized * 2000f);
 						}
 					}
 				}

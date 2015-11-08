@@ -17,7 +17,7 @@ public class Mouse : MonoBehaviour {
 
 					if (mouseRayHitInfo.distance < 20f) {
 						mouseAlert.Play ();
-						GetComponent<Rigidbody>().AddForce(-directionToCat.normalized * 1000f);
+						GetComponent<Rigidbody>().AddForce(-directionToCat.normalized * 2000f);
 					}	
 				}
 			}
