@@ -10,7 +10,7 @@ public class Mouse : MonoBehaviour {
 		for (int i=0; i<GameManager.listOfMice.Count; i++) {
 
 			// declare a var of type Vector3, called "directionToCat", set to a vector that goes from [current position] to [cat's current position]
-			Vector3 directionToCat = GameManager.listOfMice[i].transform.position - transform.position;
+			Vector3 directionToCat = GameManager.listOfCats[i].transform.position - transform.position;
 		
 			if ( Vector3.Angle ( transform.forward, directionToCat ) < 180f ) {
 				// declare a var of type Ray, called "mouseRay" that starts from [current position] and goes toward [cat's current position]
@@ -36,6 +36,6 @@ public class Mouse : MonoBehaviour {
 
 	//remove mouse from list
 	void OnDestroy () {
-		GameManager.listOfMice.Remove (transform.gameObject);
+		GameManager.listOfMice.Remove (this.gameObject);
 	}
 }

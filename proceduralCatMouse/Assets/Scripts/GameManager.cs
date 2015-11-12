@@ -11,7 +11,10 @@ public class GameManager : MonoBehaviour {
 	public static List<GameObject> listOfCats = new List<GameObject>();
 	public static List<GameObject> listOfMice = new List<GameObject>();
 
-	//int counter = 0;
+	void Start () {
+	//	listOfCats.Clear ();
+	//	listOfMice.Clear ();
+	}
 
 	// Update is called once per frame
 	void Update () {

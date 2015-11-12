@@ -12,7 +12,7 @@ public class Cat : MonoBehaviour {
 		for (int i=0; i<GameManager.listOfCats.Count; i++) {
 
 			//declare a var of type Vector3, called "directionToMouse", set to a vector that goes from [current position] to [mouse's current position]
-			Vector3 directionToMouse = GameManager.listOfCats[i].transform.position - transform.position;
+			Vector3 directionToMouse = GameManager.listOfMice[i].transform.position - transform.position;
 		
 			// if the angle between [current forward direction] vs. [directionToMouse] is less than 90 degrees, then...
 			if (Vector3.Angle ( transform.forward, directionToMouse ) < 120f ) {
