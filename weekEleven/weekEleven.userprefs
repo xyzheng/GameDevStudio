@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Test/Assets/Scripts/RameenIsDonezo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SphereInput.cs">
     <Files>
-      <File FileName="../Test/Assets/Scripts/RameenIsDonezo.cs" Line="14" Column="14" />
+      <File FileName="Assets/Scripts/SphereInput.cs" Line="15" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
